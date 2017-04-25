@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+<header id="header">
+	<div class="head_menu">
+		<div class="container clearfix">
+			<a class="logo" href="#"><img src="img/logo.png" width="117" height="27" alt=""></a>
+			<div class="menu-btn not-active" id="menu-btn"><span></span></div>
+			<nav class="menu">
+				<ul>
+					<li><a href="#banner">main slide</a></li>
+					<li><a href="#gallery">gallery</a></li>
+					<li><a href="#testimonials">clients say</a></li>
+					<li><a href="#contact">contacts</a></li>
+				</ul>
+			</nav>
+			<a data-fancybox data-src="#enter_modal" href="javascript;" class=" btn-call-us open_modal order_link">call us</a>			
+		</div>
+	</div>		
+</header>
+<main>
+	<section class="banner" id="banner">
+		<img src="upload/banner.jpg" width="1920" height="698" alt="">
+		</div>
+	</section>
+	<section class="gallery " id="gallery">
+		<div class="container">
+			<h3>Gallery</h3>
+			<div class="photos-gallery">
+				<div class="photo-gallery"><a href="#"><img src="upload/photo1-gallery.jpg" alt="" width="360" height="245"></a></div>
+				<div class="photo-gallery"><a href="#"><img src="upload/photo2-gallery.jpg" alt="" width="360" height="243"></a></div>
+				<div class="photo-gallery"><a href="#"><img src="upload/photo3-gallery.jpg" alt="" width="360" height="243"></a></div>
+				<div class="photo-gallery"><a href="#"><img src="upload/photo4-gallery.jpg" alt="" width="360" height="243"></a></div>
+				<div class="photo-gallery"> <a href="#"><img src="upload/photo5-gallery.jpg" alt="" width="360" height="243"></a></div>
+				<div class="photo-gallery"> <a href="#"><img src="upload/photo6-gallery.jpg" alt="" width="360" height="245"></a></div>
+			</div>
+		</div>		
+	</section>
+	<section class="our-partners " id="our-partners">
+		<div class="container">
+			<ul>
+				<li><a href="#" target="_blank"><img src="upload/slac.png" alt="" width="80" height="24"></a></li>
+				<li><a href="#" target="_blank"><img src="upload/adobe.png" alt="" width="38" height="34"></a></li>
+				<li><a href="#" target="_blank"><img src="upload/google.png" alt="" width="80" height="28"></a></li>
+				<li><a href="#" target="_blank"><img src="upload/facebook.png" alt="" width="80" height="18"></a></li>
+				<li><a href="#" target="_blank"><img src="upload/spotify.png" alt="" width="80" height="24"></a></li>
+				<li><a href="#" target="_blank"><img src="upload/nike.png" alt=""></a></li>
+			</ul>
+		</div>
+	</section>
+	<section class="testimonials" id="testimonials">
+		<div class="container">
+			<h3>our clients say</h3>
+			<div class="test-items">
+				<div class="test-item designer">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  enim ad  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
+					<a href="#" target="_blank"><span>Pavliv Yaroslav</span> Web designer</a>
+				</div>
+				<div class="test-item fringe">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
+					<a href="#" target="_blank"><span>John Scott</span>The Fringe	 </a>	 			
+				</div>
+			</div>
+			<div class="form-block clearfix" id="contact">
+				<form id="autoriz_form">
+					<h4>Contacts</h4>
+					<p>Sign up for our newsletter to receive updates</p>
+					<div class="form-row">
+						<span><input type="text" name="name" placeholder=" Name">
+						<em class="check">*</em></span>
+					</div>
+					<div class="form-row">
+						<span><input type="text" name="phone" placeholder="Phone">
+						<em class="check">*</em></span>
+					</div>		
+					<div class="form-row">
+						<span><input type="email" placeholder="E-mail" name="E-mail">
+						<em class="check">*</em></span>
+					</div>				
+					<input type="submit" value="send">					
+				</form>	
+			</div>			
+		</div>
+	</section>
+</main>
+
+<div class="modal" id="enter_modal" style="display: none;">
+	<div class="form-block ">
+		<form id="autoriz_form1">			
+			<h4>Contacts</h4>
+			<p>Sign up for our newsletter to receive updates</p>
+			<div class="form-row">
+				<span><input type="text" name="name" placeholder=" Name">
+				<em class="check">*</em></span>
+			</div>
+			<div class="form-row">
+				<span><input type="text" name="phone" placeholder="Phone">
+				<em class="check">*</em></span>
+			</div>		
+			<div class="form-row">
+				<span><input type="email" placeholder="E-mail" name="E-mail">
+				<em class="check">*</em></span>
+			</div>				
+			<input type="submit" value="send">	
+		</form>	
+	</div>	
+
+
+  <script src="vendor/jquery/jquery-3.2.0.min.js">
+</script>
+<script src="vendor/slick/slick.min.js"></script>
+<script src="vendor/fancybox/jquery.fancybox.min.js"></script>
+<script src="vendor/jqueryvalidation/jquery.validate.min.js"></script>
+<script src="js/core.js"></script>
+	
+</body>
+</html>

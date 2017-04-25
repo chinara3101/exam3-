@@ -24,10 +24,10 @@ header{
 	left: 0;
 	z-index: 100;
 }
-
-	nav.menu .stickytop {
+nav.menu.stickytop{
+	width: 100%;
 	position:fixed;
-	top:0
+	top:0;
 }
 .logo{
 	float: left;

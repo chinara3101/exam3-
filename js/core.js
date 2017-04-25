@@ -80,11 +80,10 @@ $(document).ready(function(){
     label.addClass("valid").text("вы правильно заполнили поле")
   	}       
     });
-
     
 	$(function(){
 			$(window).scroll(function() {
-			if($(this).scrollTop() >= 290) {
+			if($(this).scrollTop() >= $('#banner').height()) {
 			$('nav.menu').addClass('stickytop');
 			}
 			else{
@@ -92,6 +91,17 @@ $(document).ready(function(){
 			}
 			});
 		});
+	$("nav.menu").on("click","a", function (event) {
+
+         event.preventDefault();   
+
+        var id  = $(this).attr('href'),
+                    top = $(id).offset().top;
+
+        $('body,html').animate({scrollTop: top}, 800);
+
+    });
+
 	});
 
 
